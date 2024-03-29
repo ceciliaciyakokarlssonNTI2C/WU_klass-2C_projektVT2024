@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+:root{
+    --theme1: #FFE4C4;
+    --theme2: #916953;
+    --theme3: #507255;
+    --theme4: #220C10;
+    --theme5: #051014;
 }
 
 /*NAV*/
@@ -9,7 +19,8 @@
 
 
 nav {
-    background-color: bisque;
+    background-color: rgb(0, 0, 0, 0);
+    position: absolute;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -19,18 +30,9 @@ nav {
     padding-left: 30px;
 }
 
-#link_list{
-    position: absolute;
-    background-color: blueviolet;
-    top: 119px;
-    left: -70vw;
-    height: 100vh;
-    width: 70vw;
-    transition: left 0.3s;
-}
 
 header img{
-    height: 115px;
+    height: 55px;
     width: auto;
 }
 
@@ -38,10 +40,30 @@ header img{
     left: 0;
 }
 
+#link_list{ 
+    display: flex;
+    width: 100%;
+    padding: 0 5vw;
+    margin-right: 75px;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+    color: var(--theme1);
+}
+
+
 /* BURGER MENU*/
 /*------------------------------------------------------------------------------------------------------*/
 
 #burgermenu{
+    position: absolute;
+    top: -1000vh;
 
     height: 64px;
     width: 64px;
@@ -78,17 +100,25 @@ header img{
 /* SEARCH BAR */
 /*--------------------------------------------------------------------------------------------*/
 #barWrapper{
-    background-color: aqua;
+    background-color: white;
     width: 100%;
-    height: 50vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 110px;
+}
+
+#barWrapper img {
+    
+    height: 92px;
 }
 
 #bars{
-    width: 50vw;
-    height: 10vh;
+    width: 600px;
+    height: 44px;
     border-radius: 9999px;
     padding-left: 25px;
     background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
@@ -102,4 +132,230 @@ header img{
     border: 1px solid gray;
     box-shadow: 0px 3px 10px gray;
 }
+
+
+/*HOME PAGE*/
 /*--------------------------------------------------------------------------------------------*/
+
+#HomeWrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/clem-onojeghuo-zlABb6Gke24-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1,h2,h3,h4,h5,p,a{
+    color: var(--theme1);
+    font-family: "Bebas Neue";
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+#HomeContent{
+    background-color: var(--theme5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 10%;
+}
+
+footer{
+    height: 20vh;
+    background-color: var(--theme5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*KARTA*/
+/*--------------------------------------------------------------------------------------------*/
+
+#KartWrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--theme5);
+    height: 100vh;
+    padding: 0 50px;
+    padding-top: 55px;
+}
+
+#kartasection1{
+    background-color: var(--theme1);
+    border-radius: 5px;
+    margin: 50px;
+    padding: 30px;
+}
+
+#KartWrapper p{
+    color: var(--theme3);
+    font-size: 1.5em;
+}
+
+#KartWrapper h2{
+    color: var(--theme3);   
+    font-size: 2em;
+    text-align: center;
+}
+
+#KartWrapper li{
+    list-style: none;
+}
+
+#kartasection2{
+    background-color: var(--theme1);
+    border-radius: 5px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#kartasection2 img{
+    width: 100%;
+    height: 100%;
+}
+
+/*TOP 10*/
+/*--------------------------------------------------------------------------------------------*/
+#Top10Wrapper{
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--theme5);
+    padding-top: 55px;
+}
+
+#Top10Wrapper article {
+    height: 40vh;
+    width: 75%;
+    margin: 25px;
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--theme1);
+}
+
+#Top10Wrapper p{
+    color: var(--theme3);
+}
+
+
+
+/*OM OSS*/
+/*--------------------------------------------------------------------------------------------*/
+
+#OmOssWrapper {
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "se1 se2"
+    "se3 se4"
+    ;
+
+}
+
+#OmOssWrapper #section1{
+    grid-area: se1;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#OmOssWrapper #section2{
+    grid-area: se2;
+    display: flex;
+    padding: 10px;
+}
+
+#OmOssWrapper #section3{
+    grid-area: se3;
+    padding: 10px;
+}
+
+#OmOssWrapper #section4{
+    grid-area: se4;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#OmOssWrapper img{
+    height: 45vh;
+    border-radius: 10px;
+
+}
+
+/* MEDIA QUERY */
+/*--------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    #link_list{
+        position: absolute;
+        background-color: blueviolet;
+        top: 75px;
+        left: -70vw;
+        height: 100vh;
+        width: 70vw;
+        transition: left 0.3s;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: flex-start;
+        gap: 65px;
+    }
+
+
+    #burgermenu {
+        position: static;
+    }
+
+    #bars{
+        width: 90vw;
+    }
+
+    #barWrapper img{
+        height: 75px;
+    }
+
+    /*OM OSS*/
+    /*--------------------------------------------------------------------------------------------*/
+
+    #OmOssWrapper {
+        background-color: blue;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "se1"
+        "se2"
+        "se3"
+        "se4"
+        ;
+    
+    }
+
+    
+}
