@@ -252,27 +252,41 @@ footer{
     background-color: var(--theme1);
 }
 
-#Top10Wrapper p{
-    color: var(--theme3);
+#Top10Wrapper h3 {
+    color: var(--theme5);
+    font-size: 2em;
 }
 
+#Top10Wrapper p{
+    color: var(--theme3);
+    font-size: 1.2em;
+}
+
+#Top10Wrapper img{
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+}
 
 
 /*OM OSS*/
 /*--------------------------------------------------------------------------------------------*/
 
 #OmOssWrapper {
-    background-color: blue;
+    background-color: var(--theme5);
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
     "se1 se2"
     "se3 se4"
+    "se5 se6"
     ;
+
+    padding-top: 55px;
 
 }
 
@@ -287,11 +301,17 @@ footer{
     grid-area: se2;
     display: flex;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 #OmOssWrapper #section3{
     grid-area: se3;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #OmOssWrapper #section4{
@@ -301,10 +321,29 @@ footer{
     padding: 10px;
 }
 
+#section5 {
+    grid-area: se5;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+#section6 {
+    grid-area: se6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
 #OmOssWrapper img{
     height: 45vh;
     border-radius: 10px;
+}
 
+#OmOssWrapper p {
+    font-size: 1.4em;
 }
 
 /* MEDIA QUERY */
