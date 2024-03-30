@@ -23,7 +23,7 @@ nav {
     position: absolute;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     list-style: none;
     gap: 15px;
@@ -32,8 +32,10 @@ nav {
 
 
 header img{
+    margin-top: 7px;
     height: 55px;
     width: auto;
+    filter: brightness(0) saturate(100%) invert(82%) sepia(45%) saturate(274%) hue-rotate(327deg) brightness(105%) contrast(104%);
 }
 
 .active#link_list{
@@ -47,6 +49,7 @@ header img{
     margin-right: 75px;
     flex-direction: row;
     list-style: none;
+    height: 55px;
     justify-content: space-around;
     align-items: center;
 }
