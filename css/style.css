@@ -87,17 +87,15 @@ a {
 }
 
 .active #line1 {
-    rotate: 45deg;
-    translate: 0px 19px;
+    transform: translate(0px, 19px) rotate(45deg) ;
 }
 
 .active #line2 {
-    rotate: 45deg;
+    transform: rotate(45deg);
 }
 
 .active #line3 {
-    rotate: -45deg;
-    translate: 0px -19px;
+    transform: translate(0px, -19px) rotate(-45deg) ;
 }
 
 /* SEARCH BAR */
