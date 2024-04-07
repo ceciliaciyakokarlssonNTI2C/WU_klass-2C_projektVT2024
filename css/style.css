@@ -98,41 +98,6 @@ a {
     transform: translate(0px, -19px) rotate(-45deg) ;
 }
 
-/* SEARCH BAR */
-/*--------------------------------------------------------------------------------------------*/
-#barWrapper{
-    background-color: white;
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-    padding-bottom: 110px;
-}
-
-#barWrapper img {
-    
-    height: 92px;
-}
-
-#bars{
-    width: 600px;
-    height: 44px;
-    border-radius: 9999px;
-    padding-left: 25px;
-    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
-    background-size: 20px;
-    background-color: white;
-    border: 1px solid gray;
-}
-
-#bars:focus{
-    outline: none;
-    border: 1px solid gray;
-    box-shadow: 0px 3px 10px gray;
-}
 
 
 /*HOME PAGE*/
@@ -376,13 +341,7 @@ footer{
         position: static;
     }
 
-    #bars{
-        width: 90vw;
-    }
 
-    #barWrapper img{
-        height: 75px;
-    }
 
     /*OM OSS*/
     /*--------------------------------------------------------------------------------------------*/
@@ -427,11 +386,6 @@ footer{
 
     #kartasection1 ul li{
         padding: 0px 5px;
-
-        /* border: 2px solid var(--theme3);
-        border-top: none;
-        border-bottom: none;
-        margin: 0px -1px; */
     }
 
     #kartasection1 p{
